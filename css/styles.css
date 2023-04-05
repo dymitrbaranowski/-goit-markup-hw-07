@@ -68,9 +68,12 @@ a {
 /* Site nav*/
 
 .container {
-  width: 1158px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+.section {
+  width: 100%;
 }
 
 .header-container {
@@ -390,6 +393,7 @@ Our advantages*/
 */
 
 .team-container {
+  width: 100%;
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--Light);
@@ -429,6 +433,7 @@ Our advantages*/
   padding-bottom: 32px;
 }
 .team-item {
+  width: 100%;
   padding-top: 72 px;
 }
 
