@@ -39,6 +39,8 @@ ol {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 address {
@@ -410,6 +412,7 @@ Our advantages*/
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   flex-basis: calc(100% / 4);
