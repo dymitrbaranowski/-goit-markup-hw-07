@@ -39,6 +39,8 @@ ol {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 address {
@@ -68,9 +70,11 @@ a {
 /* Site nav*/
 
 .container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+  max-width: 428px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   width: 100%;
@@ -394,8 +398,8 @@ Our advantages*/
 
 .team-container {
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--Light);
 }
 .section-team {
@@ -409,16 +413,17 @@ Our advantages*/
 }
 
 .team-list {
-  display: flex;
-  gap: 24px;
+  
+ 
+  gap: 72px;
   justify-content: center;
-  flex-basis: calc(100% / 4);
+
 }
 
 .team-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: ;
   align-items: center;
   padding: 0px;
   gap: 8px;
@@ -433,7 +438,8 @@ Our advantages*/
   padding-bottom: 32px;
 }
 .team-item {
-  width: 100%;
+  
+  margin: 72px 0;
   padding-top: 72 px;
 }
 
@@ -453,15 +459,19 @@ Our advantages*/
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-social-list {
+  flex-basis: calc((100% - 20px) / 3);
   display: flex;
   justify-content: center;
   gap: 24px;
 }
 
 .team-social-item {
+  
   width: 40px;
   height: 40px;
 }
@@ -1128,4 +1138,36 @@ color: rgba(46, 47, 66, 0.4);
 .button-submit:hover,
 .button-submit:focus {
   background-color: var(--Pressed-state);
+}
+/*-----Mobile first------*/
+
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+  
+  }
+
+  .team-item {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .team-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+   
+  }
 }
