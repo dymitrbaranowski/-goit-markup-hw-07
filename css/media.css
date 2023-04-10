@@ -17,15 +17,14 @@
   }
 
   .team-item:not(:last-child) {
-  margin-bottom: 72px;
-}
+    margin-bottom: 72px;
+  }
 
   .conteiner {
     max-width: 428px;
-}
+  }
 
   .team-container {
-    
   }
 
   .page-header {
@@ -35,7 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-   max-width: 766px;
+    max-width: 766px;
   }
 
   .hero {
@@ -45,9 +44,27 @@
     background-color: var(--Dark);
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office1.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab.jpg);
     background-size: cover;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image:  linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab-2x);
+    }
+  }
+
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -55,21 +72,17 @@
     column-gap: 24px;
     justify-content: center;
   }
-  
- 
+
   .advantages-item {
     width: calc((100% - 24px) / 2);
-  
   }
 
   .our-advantages-list {
-      
-      flex-wrap: wrap;
-      gap: 72px 24px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
 
   .team-item {
-    
     margin: 0;
   }
 
@@ -78,7 +91,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 72px 24px;
-
   }
 }
 
@@ -86,6 +98,30 @@
   .container {
     max-width: 1158px;
   }
+
+  .hero {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image:  linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1-2x);
+    }
+  }
+
   .section-advantages {
     padding: 120px 0;
   }
@@ -97,8 +133,7 @@
   .section-features {
     font-size: 20px;
     line-height: 1.2;
-}
-
+  }
 
   .advantages-item {
     width: calc((100%-72px) / 4);
@@ -146,5 +181,4 @@
     gap: 24px;
     flex-basis: calc(100% / 3);
   }
-
 }
