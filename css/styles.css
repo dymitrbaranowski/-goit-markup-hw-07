@@ -39,7 +39,7 @@ ol {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -70,7 +70,7 @@ a {
 /* Site nav*/
 
 .container {
-  max-width: 428px;
+  
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -269,7 +269,7 @@ a {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office1.jpg);
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -288,7 +288,7 @@ Our advantages*/
 }
 
 .advantages-item {
-  
+  max-width: 396px;
 }
 .advantages-box {
   display: none;
@@ -314,7 +314,7 @@ Our advantages*/
 }
 .section-advantages {
   background-color: var(--B-g-color);
-  
+  padding: 96px 0;
   
 }
 
@@ -394,6 +394,7 @@ Our advantages*/
   padding-bottom: 32px;
 }
 .team-item {
+  margin: auto;
   width: 264px;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
@@ -401,8 +402,8 @@ Our advantages*/
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
-  padding-top: 72 px;
 }
+
 
 .team-title {
   text-align: center;
@@ -1083,99 +1084,4 @@ color: rgba(46, 47, 66, 0.4);
 .button-submit:hover,
 .button-submit:focus {
   background-color: var(--Pressed-state);
-}
-/*-----Mobile first------*/
-
-@media screen and (min-width: 480px) {
-  .coteiner {
-    width: 426px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 72px;
-  }
-
-  .page-header {
-    padding: 24px 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-   width: 768px;
-  }
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
-    justify-content: center;
-  }
-
-  .team-item {
-    margin: 0;
-  }
-
-  .our-advantages-list.list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 72px 24px;
-
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-  }
-  .team-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--Dark);
-  }
-
-  .doing-title {
-    color: var(--Dark);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-  }
-
-  .doing-container {
-    width: 1158px;
-    padding-bottom: 120px;
-  }
-  .doing-section {
-    display: flex;
-  }
-
-  .doing-list {
-    display: flex;
-    gap: 24px;
-    flex-basis: calc(100% / 3);
-  }
-
-  .advantages-box {
-    display: flex;
-  }
 }

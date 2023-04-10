@@ -1,0 +1,150 @@
+/*-----Mobile first------*/
+
+@media screen and (min-width: 480px) {
+  .coteiner {
+    width: 426px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list {
+    display: ;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .team-item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+  .conteiner {
+    max-width: 428px;
+}
+
+  .team-container {
+    
+  }
+
+  .page-header {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+   max-width: 766px;
+  }
+
+  .hero {
+    padding: 112px 0;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: var(--Dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office1.jpg);
+    background-size: cover;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+  }
+  
+ 
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  
+  }
+
+  .our-advantages-list {
+      
+      flex-wrap: wrap;
+      gap: 72px 24px;
+  }
+
+  .team-item {
+    
+    margin: 0;
+  }
+
+  .our-advantages-list.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .section-advantages {
+    padding: 120px 0;
+  }
+  .advantages-box {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .section-features {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+  .advantages-item {
+    width: calc((100%-72px) / 4);
+  }
+  .our-advantages-list.list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--Dark);
+  }
+
+  .doing-title {
+    color: var(--Dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+
+  .doing-container {
+    width: 1158px;
+    padding-bottom: 120px;
+  }
+  .doing-section {
+    display: flex;
+  }
+
+  .doing-list {
+    display: flex;
+    gap: 24px;
+    flex-basis: calc(100% / 3);
+  }
+
+}
