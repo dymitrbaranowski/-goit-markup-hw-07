@@ -78,41 +78,20 @@ a {
   padding: 96px 0;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  height: 72px;
-  left: 0px;
-  top: 0px;
-  border-bottom: 1px solid --Accent;
-}
 
-.page-header {
-  border-bottom: 1px solid var(--Accent);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
 .site-logo {
 }
 
 .nav-container {
-  display: flex;
+ 
 }
-.site-nav a {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--Dark);
-  display: flex;
-}
+
 .nav-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-left: 76px;
+  
 }
 
 .site-nav.list {
-  display: flex;
-  gap: 40px;
+  ;
 }
 
 .site-logo .logo {
@@ -120,8 +99,6 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -196,14 +173,7 @@ a {
 }
 /* Site address */
 
-.auth-nav {
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  list-style: none;
-  display: flex;
-  margin-left: auto;
-}
+
 
 .contact-item {
   line-height: 1.5;
@@ -213,14 +183,11 @@ a {
 }
 
 .mail-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
 }
 
 .tel-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-left: 40px;
+ 
 }
 
 .auth-nav a {
@@ -471,22 +438,13 @@ Our advantages*/
 
 /*   Customers  */
 
-.customers-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 
 .customers-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  width: 1128px;
-  border-radius: 4px;
-  border-color: var(--Subtle-Text);
-  margin-top: 72px;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 16px;
 }
 
 .customers-item {
@@ -526,10 +484,11 @@ Our advantages*/
 
 .footer {
   background-color: var(--Dark);
-  padding: 100px;
+  padding: 96px 0;
 }
 
 .footer-text {
+  max-width: 268px  ;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--Accent);
@@ -550,18 +509,14 @@ Our advantages*/
   text-decoration: none;
 }
 
-.footer-container {
-  display: flex;
-}
+
 
 .footer-soc-media {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  margin-left: 120px;
+    width: 208px;
+    height: 80px;
 }
 .footer-soc-title {
-  display: inline-block;
+  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -605,7 +560,7 @@ Our advantages*/
 }
 
 .subscribe-box {
-  margin-left: 80px;
+  
 }
 
 .subscribe-title {
@@ -613,7 +568,9 @@ Our advantages*/
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe-input {

@@ -22,39 +22,43 @@
   </head>
   <body>
     <!--site header-->
-    <!--<header class="page-header">
+    <header class="page-header">
       <div class="container header-container">
         <nav class="site-logo nav-container">
           <a href="./index.html" class="logo link"
             >Web<span class="accent">Studio</span></a
           >
           <ul class="site-nav nav-list list">
-            <li>
-              <div class="link-current-box">
-                <a href="./index.html" class="link-current link-studio link"
-                  >Studio</a
-                >
-              </div>
+            <li class="header-item">
+              <a href="./index.html" class="header-link link current"
+                >Studio</a
+              >
             </li>
 
-            <li>
-              <a href="./portfolio.html" class="link-studio link">Portfolio</a>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link link">Portfolio</a>
             </li>
 
-            <li><a href="" class="link-studio link">Contacts</a></li>
+            <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
           </ul>
         </nav>
-
-        <address class="auth-nav">
+        <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false">
+            <svg class="mobile-menu-open-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        <address class="auth-nav address-no-mobile">
           <ul class="auth-nav list">
-            <li>
+            <li class="contacts">
               <a
                 href="mailto:info@devstudio.com"
                 class="mail-link contact-item link"
+                target="_blank" 
+                rel="noopener noreferrer"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contacts">
               <a href="tel:+110001111111" class="tel-link contact-item link"
                 >+11 (000) 111-11-11</a
               >
@@ -339,8 +343,8 @@
 
       <!--   Customers  -->
 
-      <!--<section class="section customers-container">
-        <div class="container">
+      <section class="section ">
+        <div class="container customers-container">
           <h2 class="team-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -392,9 +396,9 @@
 
     <!--Site Footer-->
 
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-desc">
           <a href="./index.html" class="logo-footer link"
             >Web<span class="accent link">Studio</span></a
           >
