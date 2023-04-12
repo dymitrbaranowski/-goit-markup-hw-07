@@ -821,7 +821,7 @@ Our advantages*/
   background-color: #fcfcfc;
   position: absolute;
   transform: translate(-50%, -50%) scaleY(1);
-  width: 408px;
+  width: 100%;
   min-height: 576px;
   left: 50%;
   top: 50%;

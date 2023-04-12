@@ -39,8 +39,6 @@
     display: none;
   }
 
-
-
   .team-list {
     display: ;
     flex-wrap: wrap;
@@ -55,7 +53,7 @@
 
   .footer-container {
     max-width: 426px;
-}
+  }
   .customers-container {
     max-width: 426px;
   }
@@ -95,6 +93,10 @@
   .subscribe-input {
     width: 100%;
     margin-bottom: 16px;
+  }
+
+  .modal {
+    max-width: 392px;
   }
 
 
@@ -204,7 +206,7 @@
   .customers-list {
     justify-content: center;
     gap: 72px 24px;
-}
+  }
 
   .hero {
     padding: 112px 0;
@@ -260,6 +262,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 72px 24px;
+  }
+
+  .modal {
+    max-width: 408px;
   }
 }
 

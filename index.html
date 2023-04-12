@@ -17,8 +17,8 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/modal-windows.css">
-    <link rel="stylesheet" href="./css/mobile-menu.css">
+    <link rel="stylesheet" href="./css/modal-windows.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
     <!--site header-->
@@ -30,30 +30,34 @@
           >
           <ul class="site-nav nav-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link current"
-                >Studio</a
-              >
+              <a href="./index.html" class="header-link link current">Studio</a>
             </li>
 
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Portfolio</a>
             </li>
 
-            <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
+            <li class="header-item">
+              <a href="" class="header-link link">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false">
-            <svg class="mobile-menu-open-icon" width="32" height="22">
-              <use href="./images/icons.svg#icon-burger"></use>
-            </svg>
-          </button>
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+        >
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="auth-nav address-no-mobile">
           <ul class="auth-nav list">
             <li class="contacts">
               <a
                 href="mailto:info@devstudio.com"
                 class="mail-link contact-item link"
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 >info@devstudio.com</a
               >
@@ -65,6 +69,27 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container is-open">
+        <div class="container mobile-menu-container">
+          <div>
+            <button
+              class="mobile-menu_close-btn js-close-menu"
+              type="button"
+            ></button>
+            <ul class="mobile-header-nav list">
+              <li class="mobile-header-item">
+                <a class="mobile-header-link link current" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-header-item">
+                <a class="mobile-header-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-header-item">
+                <a class="mobile-header-link link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -110,8 +135,8 @@
               </div>
               <h3 class="section-features">Punctuality</h3>
               <p class="section-text">
-                Bring the key message to the brand's audience for the best
-                price within the shortest possible time.
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
               </p>
             </li>
             <li class="advantages-item">
@@ -134,13 +159,13 @@
               </div>
               <h3 class="section-features">Technologies</h3>
               <p class="section-text">
-                Design practice focused on digital experiences. We bring forth
-                a deep passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!--What are we doing-->
       <section class="section doing-section">
@@ -148,13 +173,28 @@
           <h2 class="doing-title">What are we doing</h2>
           <ul class="list doing-list">
             <li>
-              <img srcset="./images/desktop1-2x.jpg 2x" src="./images/desktop1.jpg" alt="desktop" width="360" />
+              <img
+                srcset="./images/desktop1-2x.jpg 2x"
+                src="./images/desktop1.jpg"
+                alt="desktop"
+                width="360"
+              />
             </li>
             <li>
-              <img srcset="./images/desktop2-2x.jpg 2x" src="./images/mobile2.jpg" alt="mobile" width="360" />
+              <img
+                srcset="./images/desktop2-2x.jpg 2x"
+                src="./images/mobile2.jpg"
+                alt="mobile"
+                width="360"
+              />
             </li>
             <li>
-              <img srcset="./images/desktop3-2x.jpg 2x" src="./images/design3.jpg" alt="design" width="360" />
+              <img
+                srcset="./images/desktop3-2x.jpg 2x"
+                src="./images/design3.jpg"
+                alt="design"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -343,7 +383,7 @@
 
       <!--   Customers  -->
 
-      <section class="section ">
+      <section class="section">
         <div class="container customers-container">
           <h2 class="team-title">Customers</h2>
           <ul class="customers-list list">
@@ -450,7 +490,8 @@
               name="user-email"
               required
             />
-            <button type="submit" class="subscribe-button">Subscribe
+            <button type="submit" class="subscribe-button">
+              Subscribe
               <svg width="24" height="24" class="telegram-icon">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
@@ -553,11 +594,11 @@
     </div>
     <script src="./js/modal.js"></script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
