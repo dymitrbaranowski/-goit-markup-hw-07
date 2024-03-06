@@ -17,20 +17,24 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
-    <link rel="stylesheet" href="./css/modal-windows.css" />
-    <link rel="stylesheet" href="./css/mobile-menu.css" />
+    <!-- <link rel="stylesheet" href="./css/modal-windows.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.css" /> -->
   </head>
   <body>
-    <!--site header-->
+    <!--site header--Site-Nav-->
     <header class="page-header">
       <div class="container header-container">
-        <nav class="site-logo nav-container">
-          <a href="./index.html" class="logo link"
-            >Web<span class="accent">Studio</span></a
+        <nav class="header-nav">
+          <a href="./index.html" class="site-logo logo link"
+            >Web<span class="header-accent">Studio</span></a
           >
-          <ul class="site-nav nav-list list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link link current">Studio</a>
+          <ul class="nav-list list">
+            <li class="link-current-box">
+              <a
+                href="./index.html"
+                class="link-current current-elem header-link link"
+                >Studio</a
+              >
             </li>
 
             <li class="header-item">
@@ -52,6 +56,7 @@
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
+        <!-- Site Address -->
         <address class="auth-nav address-no-mobile">
           <ul class="auth-nav list">
             <li class="contacts">
@@ -71,22 +76,27 @@
           </ul>
         </address>
       </div>
+      <!-- Mobile-Menu-Container -->
       <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu-container">
           <div>
-            <button
-              class="mobile-menu_close-btn js-close-menu"
-              type="button">
+            <button class="mobile-menu_close-btn js-close-menu" type="button">
               <svg class="mobile-menu_close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
             <ul class="mobile-header-nav list">
               <li class="mobile-header-item">
-                <a class="mobile-header-link link mobile-contact-blue" href="./index.html">Studio</a>
+                <a
+                  class="mobile-header-link link mobile-contact-blue"
+                  href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="mobile-header-item">
-                <a class="mobile-header-link link" href="./portfolio.html">Portfolio</a>
+                <a class="mobile-header-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="mobile-header-item">
                 <a class="mobile-header-link link" href="#">Contacts</a>
@@ -114,7 +124,7 @@
                 </li>
               </ul>
             </address>
-
+            <!-- Socal-List-Mob-Menu -->
             <ul class="social-list mob-menu list">
               <li class="social-list-item">
                 <a href="" class="social-list-link">
@@ -155,7 +165,7 @@
       <!--Hero-->
 
       <section class="hero">
-        <div class="container hero-container">
+        <div class="hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button
             type="button"
@@ -651,7 +661,5 @@
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-  
-    
   </body>
 </html>
