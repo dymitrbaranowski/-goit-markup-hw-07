@@ -82,9 +82,9 @@ button {
 }
 
 .header-nav {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .site-logo {
@@ -109,7 +109,7 @@ button {
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   gap: 40px;
   margin-left: 76px;
 }
