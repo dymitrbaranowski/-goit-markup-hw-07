@@ -1,5 +1,5 @@
 /*-----Mobile first------*/
-/* 
+
 @media screen and (max-width: 767px) {
   .mobile-menu-open {
     background-color: transparent;
@@ -109,7 +109,6 @@
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     color: var(--Primary-Brand);
   }
 
@@ -123,7 +122,6 @@
 
   .social-list.mob-menu {
     display: flex;
-    justify-content: flex-start;
     gap: 56px;
   }
 
@@ -137,9 +135,9 @@
     background-color: var(--Primary-Brand);
   }
 
-  .page-header {
+  /* .page-header {
     padding: 24px 0;
-  }
+  } */
 
   .header-container {
     max-width: 426px;
@@ -348,7 +346,7 @@
     background-size: cover;
   }
 
-  @media (min-device-pixel-ratio: 2),
+  /* @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -359,7 +357,7 @@
         ),
         url(../images/Dark-bg-tab-2x);
     }
-  }
+  } */
 
   .team-list {
     display: flex;
@@ -531,4 +529,4 @@
   .footer-container {
     width: 552px;
   }
-} */
+}
