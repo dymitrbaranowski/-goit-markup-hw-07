@@ -76,8 +76,8 @@ button {
     width: 768px;
   }
 
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
@@ -88,10 +88,10 @@ button {
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 1440px) {
+  /* @media screen and (min-width: 1200px) {
     padding-left: 160px;
     padding-right: 160px;
-  }
+  } */
 }
 
 .page-header {
@@ -186,7 +186,7 @@ button {
   /* display: flex;
   gap: 40px; */
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 40px;
   }
@@ -206,7 +206,7 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1199px) {
     padding: 0;
   }
 }
@@ -365,7 +365,6 @@ button {
 /* Site hero*/
 
 .hero-container {
-  max-width: 428px;
   padding: 112px 0;
   margin: 0 auto;
   background-color: var(--Dark);
@@ -378,8 +377,35 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+
+  @media screen and (min-width: 428px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/Dark-bg-tab.jpg);
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/people-office1.jpg);
+    background-size: cover;
+    padding: 188px 0;
+  }
 }
-@media (min-device-pixel-ratio: 2),
+
+/* @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -388,9 +414,9 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg-mob-2x);
+      url(./images/Dark-bg-mob-2x);
   }
-}
+} */
 
 .hero-title {
   color: var(--B-g-color);
@@ -417,15 +443,30 @@ button {
 .hero-container {
 }
 
-/* S
-ite section
+/* Site section
 Our advantages*/
 
-.container-advantages-benefits {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  line-height: 1.07;
 }
 
 .advantages-item {
   max-width: 396px;
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-72px) / 4);
+  }
 }
 .advantages-box {
   display: none;
@@ -436,18 +477,21 @@ Our advantages*/
   background-color: var(--Light);
   border-radius: 4px;
 }
-.advantages-icon {
-}
 
 .our-advantages-list.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px;
+
+  @media screen and (min-width: 768px) {
+    gap: 72px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
-.text-item-advantages {
-}
 .section-advantages {
   background-color: var(--B-g-color);
   padding: 96px 0;
@@ -467,21 +511,6 @@ Our advantages*/
 .section-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  line-height: 1.07;
 }
 
 /* Site sectin What are we doing*/
