@@ -497,13 +497,13 @@
     flex-basis: calc(100% / 3);
   } */
 
-  .footer {
+  /* .footer {
     padding: 100px 0;
-  }
+  } */
 
-  .footer-container {
+  /* .footer-container {
     gap: 0 0;
-  }
+  } */
   .footer-desc {
     margin-right: 120px;
   }
