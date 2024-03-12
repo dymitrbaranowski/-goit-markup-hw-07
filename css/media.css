@@ -504,9 +504,9 @@
   /* .footer-container {
     gap: 0 0;
   } */
-  .footer-desc {
+  /* .footer-desc {
     margin-right: 120px;
-  }
+  } */
 
   .subscribe-box {
     margin-left: auto;
@@ -514,12 +514,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
+  /* .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .footer-container {
+  } */
+  /* .footer-container {
     width: 552px;
-  }
+  } */
 }
