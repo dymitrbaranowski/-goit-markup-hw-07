@@ -62,6 +62,7 @@ button {
 /* Site nav*/
 
 .container {
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
   outline-color: red;
@@ -556,7 +557,6 @@ Our advantages*/
 
 .doing-title {
   color: var(--Dark);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -567,6 +567,7 @@ Our advantages*/
 
 .doing-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
   flex-basis: calc(100% / 3);
 }
@@ -587,12 +588,14 @@ Our advantages*/
 }
 
 .team-list {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    row-gap: 64px;
   }
 }
 .section-team {
@@ -605,18 +608,10 @@ Our advantages*/
   margin-bottom: 8px;
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 72px;
-  column-gap: 24px;
-  justify-content: center;
-}
-
 .team-description {
   display: flex;
   flex-direction: column;
-  justify-content: ;
+  /* justify-content: center; */
   align-items: center;
   padding: 0px;
   gap: 8px;
@@ -765,10 +760,10 @@ Our advantages*/
 
 .footer-container {
   @media screen and (min-width: 768px) {
+    width: 552px;
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
-    padding-left: 108px;
   }
 
   /* padding: 100px 15px; */
@@ -876,6 +871,12 @@ Our advantages*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    width: 453px;
+    justify-content: start;
+  }
 }
 
 .subscribe-input {
@@ -892,6 +893,11 @@ Our advantages*/
   line-height: 2;
   color: var(--B-g-color);
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 264px;
+    margin: 0 24px 0 0;
+  }
 }
 
 .subscribe-input::placeholder {
@@ -907,7 +913,6 @@ Our advantages*/
 
 .subscribe-button {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 165px;
