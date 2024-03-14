@@ -1,4 +1,4 @@
-/*-----Mobile first------*/
+-----Mobile first------
 
 @media screen and (max-width: 767px) {
   /* .mobile-menu-open {
@@ -173,8 +173,7 @@
     max-width: 426px;
   } */
 
-  .team-container {
-  }
+ 
   /* 
   .footer-container {
     display: flex;
@@ -208,9 +207,9 @@
     margin-bottom: 16px;
   }
 
-  .modal {
+   .modal {
     max-width: 392px;
-  } */
+  } 
 }
 
 /* @media screen and (max-width: 420px) {
@@ -221,6 +220,7 @@
     gap: 36px;
   }
 } */
+/*
 @media screen and (min-width: 768px) {
   /* .mobile-menu {
     display: none;
@@ -381,10 +381,10 @@
     gap: 72px 24px;
   } */
 
-  .modal {
+  /* .modal {
     max-width: 408px;
   }
-}
+} 
 
 @media screen and (min-width: 1200px) {
   /* .container {
@@ -508,11 +508,13 @@
     margin-right: 120px;
   } */
 
-  .subscribe-box {
+  /* .subscribe-box {
     margin-left: auto;
-  }
-}
+  } */
+}  
 
+
+ /* 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /* .footer {
     display: flex;
@@ -521,5 +523,6 @@
   } */
   /* .footer-container {
     width: 552px;
-  } */
+ 
 }
+*/

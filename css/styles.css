@@ -65,9 +65,9 @@ button {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline-color: red;
+  /* outline-color: red;
   outline-width: 2px;
-  outline-style: groove;
+  outline-style: groove; */
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -357,7 +357,12 @@ button {
 
 .social-list.mob-menu {
   display: flex;
+
   gap: 56px;
+
+  @media screen and (max-width: 404px) {
+    gap: 10%;
+  }
 }
 
 .social-list-link {
@@ -368,6 +373,7 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: var(--Primary-Brand);
+  flex-shrink: 2;
 }
 
 /* Site hero*/
@@ -756,6 +762,9 @@ Our advantages*/
     align-items: center;
     justify-content: center;
   }
+  @media screen and (min-width: 1200px) {
+    padding: 100px 0;
+  }
 }
 
 .footer-container {
@@ -766,7 +775,10 @@ Our advantages*/
     gap: 72px 24px;
   }
 
-  /* padding: 100px 15px; */
+  @media screen and (min-width: 1200px) {
+    width: 1128px;
+    gap: 0;
+  }
 }
 
 .logo-footer.link {
@@ -789,6 +801,10 @@ Our advantages*/
   /* text-align: center; */
 
   max-height: 112px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 120px;
+  }
 }
 
 .accent {
@@ -862,6 +878,12 @@ Our advantages*/
   fill: var(--B-g-color);
 }
 
+.subscribe-box {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
 .subscribe-form {
   /* display: flex;
   flex-wrap: wrap;
@@ -898,6 +920,10 @@ Our advantages*/
     min-width: 264px;
     margin: 0 24px 0 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    opacity: 1;
+  }
 }
 
 .subscribe-input::placeholder {
@@ -909,6 +935,10 @@ Our advantages*/
   letter-spacing: 0.04em;
   color: var(--B-g-color);
   opacity: 0.6;
+
+  @media screen and (min-width: 1200px) {
+    opacity: 1;
+  }
 }
 
 .subscribe-button {
@@ -935,6 +965,16 @@ Our advantages*/
 
 .telegram-icon {
   fill: var(--B-g-color);
+}
+
+/* Modal */
+
+.modal {
+  max-width: 392px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 408px;
+  }
 }
 
 /* Portflio.html */
