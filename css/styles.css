@@ -65,9 +65,9 @@ button {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  /* outline-color: red;
+  outline-color: red;
   outline-width: 2px;
-  outline-style: groove; */
+  outline-style: groove;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -980,6 +980,40 @@ Our advantages*/
 
 /* Portflio.html */
 
+/* Site Advantages-Container */
+
+.benefits-advantages-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+
+/* Adva */
+.advantages-container {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* max-width: 263px; */
+  margin-bottom: 48px;
+}
+
+.advantages-list-btn {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 267px;
+  gap: 16px 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
 .advantages-link {
   font-family: inherit;
   font-size: 16px;
@@ -990,35 +1024,86 @@ Our advantages*/
   align-items: center;
   text-align: center;
   cursor: pointer;
-}
-/* Site Advantages */
+  padding: 8px 16px;
 
-.benefits-advantages-container {
-  padding-top: 96px;
-  padding-bottom: 66px;
+  @media screen and (min-width: 768px) {
+    padding: 12px 24px;
+  }
 }
 
-.benefits-description {
-  padding: 32px 0 32px 16px;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-}
-.advantages-container {
+/* .advantages-link {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-bottom: 66px;
-}
+  align-items: center;
+  padding: 12px 24px;
+  max-width: 116px;
+  max-height: 48px;
+  background: var(--Light);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  flex: none;
+  flex-grow: 1;
+} */
+
+/* Benefits-Container */
 
 .benefits-container {
+  /* padding-top: 48px;
+  padding-bottom: 48px;
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  } */
+}
+
+.advantages-list-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 24px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 48px 24px;
+  }
+}
+
+/* .advantages-list {
+} */
+
+.benefins-item {
+  max-width: 396px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 356px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 360px;
+  }
+}
+
+.advantages-list {
+}
+
+.advantages-list:hover .benefits-cover-box {
+  transform: translatey(-100%);
+}
+.advantages-list:focus .benefits-cover-box {
+  transform: translatey(-100%);
+}
+
+.advantages-list:hover,
+.advantages-list:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .benefits-top-wrap {
   position: relative;
   overflow: hidden;
 }
-.advantages-list {
-}
+
 .benefits-cover-box {
   position: absolute;
   background: #4d5ae5;
@@ -1036,52 +1121,11 @@ Our advantages*/
   color: var(--Light);
 }
 
-.advantages-list:hover .benefits-cover-box {
-  transform: translatey(-100%);
-}
-.advantages-list:focus .benefits-cover-box {
-  transform: translatey(-100%);
-}
-
-.advantages-list-btn {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-.advantages-link {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-  max-width: 116px;
-  max-height: 48px;
-  background: var(--Light);
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  flex: none;
-  flex-grow: 1;
-}
-
-.advantages-list-benefits {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-
-.advantages-list {
-  text-decoration: none;
-  display: block;
-}
-
-.advantages-list:hover,
-.advantages-list:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.benefits-description {
+  padding: 32px 0 32px 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .advantages-title {
