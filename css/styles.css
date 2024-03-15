@@ -39,8 +39,8 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%;
+  height: auto; */
 }
 
 address {
@@ -1056,16 +1056,31 @@ Our advantages*/
     padding-top: 64px;
     padding-bottom: 96px;
   } */
+  /* display: flex;
+  justify-content: center; */
+  /* margin: 0 auto; */
 }
-
+/*  маржин відємний  */
 .advantages-list-benefits {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
   gap: 72px 24px;
 
+  @media screen and (min-width: 768px) {
+    /* gap: 48px 24px; */
+    gap: 0;
+    justify-content: start;
+    margin-top: -72px;
+    margin-left: -24px;
+  }
+
   @media screen and (min-width: 1200px) {
-    gap: 48px 24px;
+    /* gap: 48px 24px; */
+    justify-content: center;
+    margin-top: -48px;
+    margin-left: -24px;
   }
 }
 
@@ -1073,13 +1088,20 @@ Our advantages*/
 } */
 
 .benefins-item {
-  max-width: 396px;
+  /* max-width: 396px; */
 
+  /* margin: 0 auto; */
   @media screen and (min-width: 768px) {
-    max-width: 356px;
+    /* max-width: 356px; */
+    flex-basis: calc(100% / 2 - 24px);
+    margin-left: 24px;
+    margin-top: 72px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 360px;
+    flex-basis: calc(100% / 3 - 24px);
+    margin-left: 24px;
+    margin-top: 48px;
   }
 }
 
