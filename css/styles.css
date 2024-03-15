@@ -65,9 +65,9 @@ button {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline-color: red;
+  /* outline-color: red;
   outline-width: 2px;
-  outline-style: groove;
+  outline-style: groove; */
 
   @media screen and (min-width: 480px) {
     width: 480px;
