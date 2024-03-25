@@ -408,6 +408,7 @@ button {
 
   @media screen and (min-width: 1200px) {
     width: 100%;
+    height: auto;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
